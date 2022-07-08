@@ -1,0 +1,82 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.01) 10%, rgba(0,0,0,1) 100%);
+  z-index: 1;
+}
+
+.LogoTitle {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 40px;
+  color: var(--color-red-600);
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.category-group {
+  display: flex;
+  font-size: 10px;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.category {
+  padding-left: 15px;
+}
+
+.menu-group {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 30px;
+}
+
+.menu {
+  padding-left: 15px;
+}
+
+.poster {
+  width: 100%;
+}
+
+.main-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.info-group {
+  position: absolute;
+  bottom: 45%;
+  width: 300px;
+  margin-left: 40px;
+}
+
+.main-title {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.play {
+  border: 0;
+  width: 80px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.info {
+  border: 0;
+  width: 100px;
+  height: 30px;
+  background-color:rgba(0,0,0,0.4);
+  border-radius: 4px;
+  color: #ffffff;
+}
