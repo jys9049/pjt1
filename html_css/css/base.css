@@ -12,8 +12,8 @@ body {
 
 header {
   width: 100%;
-  min-width: 860px;
-  max-width: 1920px;
+  /* min-width: 860px; */
+  /* max-width: 1920px; */
   height: 80px;
 }
 
@@ -38,8 +38,9 @@ figure{
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0;
+  padding: 0;
 }
 
 ul {

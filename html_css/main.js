@@ -14,6 +14,7 @@ function mouseover() {
     $recomendArr[i].addEventListener("mouseover", () => {
       createModal();
     })
+
   }
 }
 
@@ -27,5 +28,6 @@ const createModal = () => {
   
   return inner;
 }
+
 
 mouseover();

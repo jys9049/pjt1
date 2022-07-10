@@ -32,16 +32,25 @@ header {
   right: 30px;
 }
 
+.select-category:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
 .menu {
   padding-left: 15px;
 }
 
-.poster {
+.main-area {
+  position: relative;
   width: 100%;
+  height: 56vw;
 }
 
-.main-img {
-  position: relative;
+.main-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -49,33 +58,45 @@ header {
 .info-group {
   position: absolute;
   top: 0;
-  width: 300px;
+  width: 25%;
   margin-left: 40px;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .main-title {
-  font-size: 80px;
   margin-bottom: 15px;
 }
 
+.main-title h2 {
+  font-size: 8vw;
+}
+
+.main-title h3 {
+  font-size: 3vw;
+}
+
 .desc {
-  font-size: 13px;
+  font-size: 1vw;
+  font-weight: 300;
   margin-bottom: 15px;
 }
 
 .play {
   border: 0;
-  width: 80px;
-  height: 30px;
+  max-width: 90px;
+  max-height: 40px;
+  width: 10vw;
+  height: 4vw;
   background-color: #ffffff;
   border-radius: 4px;
 }
 
 .info {
   border: 0;
-  width: 100px;
-  height: 30px;
+  max-width: 120px;
+  max-height: 40px;
+  width: 12vw;
+  height: 4vw;
   background-color:rgba(0,0,0,0.4);
   border-radius: 4px;
   color: #ffffff;
@@ -83,4 +104,78 @@ header {
 
 .strong {
   font-weight: 600;
+}
+
+.bg-opacity {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  height: 14.7vw;
+  background-image: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#141414 68%,#141414);
+  z-index: 2;
+}
+
+.top-ten {
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.top-ten .title {
+  position: absolute;
+}
+
+.recomend {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.ranking {
+  width: max-content;
+  height: max-content;
+  font-size: 200px;
+  color: #000000;
+  -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #888888
+}
+
+.recomend-img {
+  position: absolute;
+  left: 37%;
+  top: 11%;
+  width: 100px;
+  height: 148px;
+}
+
+.mouseover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  z-index:5;
+}
+
+.mouseover .img {
+  width: 100%;
+  height: 170px;
+  background-color: #000000;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.mouseover .play-list {
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
 }
