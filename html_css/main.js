@@ -6,18 +6,26 @@ const getAll = (target) => {
   return document.querySelectorAll(target);
 }
 
-const $category = get(".category-group");
-const $selectCategory = get(".select-category");
-const $selectCategoryArr = getAll(".select-category");
-const a = get("a");
+const $recomend = get(".recomend");
+const $recomendArr = getAll(".recomend");
 
-const categoryClick = () => {
-  $selectCategoryArr.forEach((category)=> {
-    category.addEventListener("click", (e) => {
-      const target = e.target;
-      target.classList.add('strong');
-    });
-  });
+function mouseover() {
+  for(let i = 0; i < $recomendArr.length; i++){
+    $recomendArr[i].addEventListener("mouseover", () => {
+      createModal();
+    })
+  }
 }
 
-categoryClick();
+const createModal = () => {
+  const inner = $recomend.innerHTML = `
+          <div class="mouseover">
+            <img src="./images/topPoster2.jpg" alt="" class="img">
+            <div class="play-list"></div>
+          </div>
+          `
+  
+  return inner;
+}
+
+mouseover();
