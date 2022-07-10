@@ -19,7 +19,6 @@ header {
   display: flex;
   font-size: 10px;
   font-weight: 300;
-  margin-left: 5px;
 }
 
 .category {
@@ -49,9 +48,10 @@ header {
 
 .info-group {
   position: absolute;
-  bottom: 45%;
+  top: 0;
   width: 300px;
   margin-left: 40px;
+  padding-top: 70px;
 }
 
 .main-title {
@@ -79,4 +79,8 @@ header {
   background-color:rgba(0,0,0,0.4);
   border-radius: 4px;
   color: #ffffff;
+}
+
+.strong {
+  font-weight: 600;
 }
